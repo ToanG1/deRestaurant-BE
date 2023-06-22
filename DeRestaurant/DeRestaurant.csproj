@@ -1,0 +1,49 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+    <PackageReference Include="MySql.EntityFrameworkCore" Version="6.0.13" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.13">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.13">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Minio" Version="4.0.7" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.18" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Models\" />
+    <None Remove="Models\Entities\" />
+    <None Remove="Models\DTO\" />
+    <None Remove="Repository\" />
+    <None Remove="Minio\" />
+    <None Remove="Repository\IRepository\" />
+    <None Remove="Models\DTO\Dish\" />
+    <None Remove="Models\DTO\Comment\" />
+    <None Remove="Models\DTO\Bill\" />
+    <None Remove="Models\DTO\Common\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\" />
+    <Folder Include="Models\Entities\" />
+    <Folder Include="Models\DTO\" />
+    <Folder Include="Repository\" />
+    <Folder Include="Minio\" />
+    <Folder Include="Repository\IRepository\" />
+    <Folder Include="Models\DTO\Dish\" />
+    <Folder Include="Models\DTO\Comment\" />
+    <Folder Include="Models\DTO\Bill\" />
+    <Folder Include="Models\DTO\Common\" />
+  </ItemGroup>
+</Project>
